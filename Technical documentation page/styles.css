@@ -1,0 +1,59 @@
+body {
+    position: relative;
+}
+
+.navbar-fixed-left {
+    max-width: 170px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav>li {
+    float: none;
+    width: 169px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav>li>a {
+        margin-left: 15px;
+        width: 169px;
+        line-height: 20px;
+        padding: 15px;
+    }
+}
+
+main {
+    margin-left: 170px;
+    padding: 10px;
+}
+
+.filler {
+    height: 500px;
+    background-color: blueviolet;
+}
+
+.violet {
+    color: blueviolet;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.grey {
+    color: grey;
+}
+
+.nodots {
+    list-style-type: none;
+}
+
+.glyph {
+    font-weight: 900;
+    font-size: 150%;
+}

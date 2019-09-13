@@ -1,0 +1,27 @@
+.container [class^=col-] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);
+}
+
+.row {
+  margin: 5px;
+}
+
+img {
+  width: 100px;
+}
+
+#affixed {
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: black;
+}
+
+#myCollapsible {
+  background-color: #eee;
+}
+
+body { position: relative; }

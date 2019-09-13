@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="styles.css" />
+    <title>Kotlin documentation</title>
+</head>
+
+<body data-spy="scroll">
+    <nav id="navbar"
+         class="navbar navbar-inverse navbar-fixed-left navbar-fixed-top">
+        <!-- <header>Kotlin</header> -->
+        <header class="navbar-header">
+            <a href="#"
+               class="navbar-brand">Kotlin</a>
+        </header>
+        <ul class="nav navbar-nav">
+            <li><a href="#Hello_World"
+                   class="nav-link">Hello World</a></li>
+            <li><a href="#Variables"
+                   class="nav-link">Variables</a></li>
+            <li><a href="#Basic_types"
+                   class="nav-link">Basic types</a></li>
+            <li><a href="#Comments"
+                   class="nav-link">Comments</a></li>
+            <li><a href="#Arithmetic_operations"
+                   class="nav-link">Arithmetic operations</a></li>
+            <li><a href="#String_templates"
+                   class="nav-link">String templates</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <!-- 5 sections -->
+        <section class="main-section"
+                 id="Hello_World">
+            <header>
+                <h3>Hello World</h3>
+            </header>
+            <p>Let's start by printing "Hello, world!" message to screen:</p>
+            <pre><code><span class="violet">fun</span> main(args: <span class="blue">Array</span>&lt<span class="blue">String</span>&gt) {
+    println(<span class="green">"Hello, world!"</span>);
+}</code></pre>
+        </section>
+        <section class="main-section"
+                 id="Variables">
+            <header>
+                <h3>Variables</h3>
+            </header>
+            <p>Declare variables either using <code>var</code> or <code>val</code></p>
+            <p><code>Val</code> declarations cannot be reassigned, they are immutable.</p>
+            <pre><code><span class="violet">val</span> num = <span class="blue">10</span>;
+num = <span class="blue">12</span>; // won't compile
+<span class="violet">var</span> test = <span class="blue">10</span>;
+num = <span class="blue">21</span>;</code></pre>
+
+        </section>
+        <section class="main-section"
+                 id="Basic_types">
+            <header>
+                <h3>Basic types</h3>
+            </header>
+            <p>Kotlin is statically typed programming language with basc data types support such as Numbers, Characters,
+                Booleans, Arrays and Strings.</p>
+            <p>Built-in number types:</p>
+            <ul>
+                <li>Double</li>
+                <li>Float</li>
+                <li>Long</li>
+                <li>Int</li>
+                <li>Short</li>
+                <li>Byte</li>
+            </ul>
+            <p>For example:</p>
+            <pre><code><span class="violet">val</span> pi: <span class="blue">Float</span> = <span class="blue">3.14f</span>;</code></pre>
+
+        </section>
+        <section class="main-section"
+                 id="Comments">
+            <header>
+                <h3>Comments</h3>
+            </header>
+            <p>Single-line comment</p>
+            <pre><code><span class="grey">// outputs "Hello, world!"</span></code></pre>
+            <p>Multi-line comment</p>
+            <pre><code><span class="grey">/* Multi-line comments 
+    can span over multiple lines */</span></code></pre>
+
+        </section>
+        <section class="main-section"
+                 id="Arithmetic_operations">
+            <header>
+                <h3>Arithmetic operations</h3>
+            </header>
+            <p>Kotlin supports the following arithmetic operations:</p>
+            <ul class="nodots">
+                <li><span class="glyph">+</span> (addition)</li>
+                <li><span class="glyph">-</span> (subtraction)</li>
+                <li><span class="glyph">*</span> (multiplication)</li>
+                <li><span class="glyph">/</span> (division)</li>
+                <li><span class="glyph">%</span> (modulo)</li>
+            </ul>
+            <pre><code><span class="violet">var</span> num1: <span class="blue">Double</span> = <span class="blue">10.42;</span></code>
+<code><span class="violet">var</span> num2: <span class="blue">Double</span> = <span class="blue">5.14;</span></code>
+
+<code><span class="violet">var</span> res:  = num1 / num2;</code>
+<code>println(res)</code></pre>
+
+        </section>
+
+        <section class="main-section"
+                 id="String_templates">
+            <header>
+                <h3>String templates</h3>
+            </header>
+            <p>String templates are used to insert a variable's value into a string:</p>
+            <pre><code><span class="violet">var</span> x = <span class="blue">5;</span></code>
+<code><span class="violet">val</span> s1 = <span class="green">"Value is $x";</span></code>
+<code>println(<span class="blue">s1</span>)</code>
+<code><span class="grey">// outputs "Value is 5"</span></code></pre>
+
+            <p>Anything in the curly brackets starting with a $ (dollar) sign will be evaluated and the result will be
+                put in the string:</p>
+            <pre><code><span class="violet">var</span> x = <span class="blue">5;</span></code>
+<code><span class="violet">var</span> y = <span class="blue">6;</span></code>
+<code><span class="violet">val</span> sum = <span class="green">"Sum is ${x + y}";</span></code>
+<code>println(<span class="blue">sum</span>)</code>
+<code><span class="grey">// outputs "Sum is 11"</span></code></pre>
+
+        </section>
+    </main>
+</body>
+
+</html>
